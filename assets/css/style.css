@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+}
+
+nav{
+    width: 60%;
+    margin: auto;
+    height: 50px;
+    background-color: rgb(129, 182, 199);
+}
+
+nav>div{
+    background-color: rgb(129, 209, 235);
+    margin: 0.5rem;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.col-2{
+    width: calc(100% /12 *2);
+}
+
+.col-8{
+    width: calc(100% /12 *8);
+}
+
+.jumbotron{
+    background-color: lightblue;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    width: 50%;
+    background-color: rgb(113, 154, 168);
+    height: 300px;
+}
+
