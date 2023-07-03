@@ -55,6 +55,11 @@ nav>div{
     height: 400px;
 }
 
+.dark-section{
+    background-color: rgb(160, 160, 160);
+    height: 400px;
+}
+
 .section-container{
     width: 60%;
     background-color: rgb(250, 205, 122);
