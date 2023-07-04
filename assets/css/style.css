@@ -2,27 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
-    font-size: 12px;
 }
 
-header{
+/* Start debug */
+.debug *{
+    border: 1px dashed black;
+}
+
+.debug header{
     background-color: lightblue;
 }
 
-nav{
-    width: 60%;
-    margin: 1rem auto;
+.debug header .container{
     background-color: rgb(129, 182, 199);
 }
 
-nav>div{
+.debug header .container div{
     background-color: rgb(129, 209, 235);
-    height: 50px;
-    margin: 1rem;
 }
 
-.flex-container{
+.debug .jumbotron{
+    background-color: lightblue;
+}
+
+.debug .main-image{
+    background-color: rgb(113, 154, 168);
+    height: 300px;
+}
+
+.debug .light-section{
+    background-color: lightgray;
+}
+
+.debug .dark-section{
+    background-color: rgb(160, 160, 160);
+}
+
+.debug main .container{
+    background-color: rgb(250, 205, 122);
+    margin: 2rem auto;
+}
+
+.debug .row{
+    background-color: rgb(248, 190, 83);
+}
+
+.debug .row>div{
+    background-color: rgb(227, 162, 41);
+}
+
+.debug .card{
+    background-color: rgb(187, 130, 24);
+    height: 300px;
+}
+
+.debug footer{
+    background-color: rgb(55, 112, 131);
+}
+
+.debug .footer-end{
+    background-color: rgb(248, 190, 83);
+}
+.debug .footer-row>div{
+    background-color: rgb(227, 162, 41);
+}
+
+.debug .button{
+    background-color: rgb(187, 130, 24);
+    height: 50px;
+}
+/* End debug */
+
+/* Start utilities */
+.container{
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.flex{
     display: flex;
 }
 
@@ -41,68 +99,60 @@ nav>div{
 .col-8{
     width: calc(100% /12 * 8);
 }
+/* End utilities */
 
-.jumbotron{
-    background-color: lightblue;
+/* Start Header */
+header .container{
+    align-items: center;
+    padding: 1rem 0;
 }
 
+.logo{
+    text-align: left;
+}
+
+.menu{
+    text-align: center;
+}
+
+.login{
+    text-align: right;
+}
+/* End Header */
+
+
+/* Start Jumbotron */
 .main-image{
     width: 50%;
-    background-color: rgb(113, 154, 168);
-    height: 300px;
     margin: 2rem auto;
 }
+/* End Jumbotron */
 
-.light-section{
-    background-color: lightgray;
-}
-
-.dark-section{
-    background-color: rgb(160, 160, 160);
-}
-
-.section-container{
-    width: 60%;
-    background-color: rgb(250, 205, 122);
+/* Start Main */
+main .container{
     margin: 2rem auto;
 }
 
 .row{
-    background-color: rgb(248, 190, 83);
-    align-items: center;
     margin: 2rem auto;
 }
 
 .row>div{
-    background-color: rgb(227, 162, 41);
     margin: 2rem auto;
 }
 
 .card{
-    background-color: rgb(187, 130, 24);
-    height: 300px;
     margin: 1rem;
 }
+/* End Main */
 
-footer{
-    background-color: rgb(55, 112, 131);
-}
-
-.footer-row{
-    background-color: rgb(248, 190, 83);
-    width: 100%;
+/* Start Footer */
+.footer-end{
     align-items: center;
     justify-content: space-between;
-    margin: 1rem auto;
-}
-
-.footer-row>div{
-    background-color: rgb(227, 162, 41);
-    margin: 1rem 0;
 }
 
 .button{
-    background-color: rgb(187, 130, 24);
-    height: 50px;
     margin: 1rem;
 }
+/* End Footer */
